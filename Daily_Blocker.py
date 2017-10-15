@@ -1,5 +1,5 @@
 # This script will block distracting websites for specific working hours .....
-# Working Hours are from 9am to 6pm
+# Working Hours are from 9am to 4pm
 import time
 from datetime import datetime as dt
 
@@ -14,7 +14,7 @@ while True:
     print(dt.now())
     
     file = open(file_path, 'r+')
-    if dt(dt.now().year,dt.now().month,dt.now().day,9) < dt.now() < dt(dt.now().year,dt.now().month,dt.now().day,18):
+    if dt(dt.now().year,dt.now().month,dt.now().day,9) < dt.now() < dt(dt.now().year,dt.now().month,dt.now().day,16):
         content = file.read()
         for website in websites:
             if website in content:
