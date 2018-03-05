@@ -14,7 +14,7 @@ while True:
     print(dt.now())
     
     file = open(file_path, 'r+')
-    if dt(dt.now().year,dt.now().month,dt.now().day,9) < dt.now() < dt(dt.now().year,dt.now().month,dt.now().day,14):
+    if dt(dt.now().year,dt.now().month,dt.now().day,9) < dt.now() < dt(dt.now().year,dt.now().month,dt.now().day,17):
         content = file.read()
         for website in websites:
             if website in content:
