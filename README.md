@@ -1,4 +1,4 @@
-# WebsiteBlocker
+# WebsiteBlocker : Starting My Own Blog
 - This script helps in blocking distracting websites for specified working hours.
 - You can change working hours and websites to block in the script.
 
